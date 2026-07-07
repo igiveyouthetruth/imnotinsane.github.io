@@ -1,81 +1,158 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 <title>THE TRUTH</title>
 
 <style>
 
+*{
+    box-sizing:border-box;
+}
+
 body{
     margin:0;
     background:black;
-    font-family: Arial, sans-serif;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
-/* ===== PAGE 1 ===== */
+/* ---------- FULL SCREEN SLIDES ---------- */
 
-.page1{
+.page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
     padding:30px;
 }
 
-.title{green
-    border:6px solid white;
-    text-align:center;
-    color:lime;
-    font-size:90px;
-    font-weight:bold;
-    padding:20px;
-    margin-bottom:20px;
+/* ---------- SLIDE WIDTH ---------- */
+
+.slide{
+    width:1300px;
+    max-width:95%;
 }
 
-/* 2 column layout */
+/* ---------- TITLE ---------- */
+
+.title{
+    border:6px solid white;
+    color:lime;
+    text-align:center;
+
+    font-size:110px;
+    font-weight:900;
+
+    padding:20px;
+
+    margin-bottom:25px;
+
+    text-shadow:
+    0 0 10px lime,
+    0 0 25px lime,
+    0 0 50px lime;
+}
+
+/* ---------- PAGE 1 LAYOUT ---------- */
+
 .grid{
     display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:20px;
+    grid-template-columns: 1.15fr 1fr;
+    gap:25px;
 }
 
 .box{
     border:6px solid white;
     color:#ff00aa;
-    padding:15px;
-    line-height:1.4;
-    font-size:18px;
-}
 
-/* ===== PAGE 2 ===== */
-
-.page2{
-    padding:40px;
-    margin-top:80px;
-}
-
-.big-container{
-    border:6px solid white;
-    padding:30px;
-    max-width:1100px;
-    margin:auto;
-}
-
-.heading-green{
-    color:lime;
     text-align:center;
-    font-size:28px;
+
+    padding:15px;
+
+    line-height:1.45;
+
+    font-size:22px;
+
     font-weight:bold;
+}
+
+.leftbox{
+    min-height:540px;
+}
+
+.righttop{
+    min-height:220px;
     margin-bottom:20px;
 }
 
-.text-pink{
-    color:#ff00aa;
-    font-size:18px;
-    line-height:1.6;
+.rightbottom{
+    min-height:300px;
+}
+
+.warning{
+    color:red;
+    text-decoration:underline;
+    font-size:24px;
+    margin-bottom:10px;
+}
+
+/* ---------- PAGE 2 ---------- */
+
+.summary-box{
+    border:6px solid white;
+    padding:30px;
+}
+
+.summary-title{
+    color:lime;
+
     text-align:center;
+
+    font-size:34px;
+
+    font-weight:bold;
+
+    margin-bottom:20px;
+
+    text-shadow:
+    0 0 10px lime,
+    0 0 20px lime;
+}
+
+.summary-text{
+    color:#ff00aa;
+
+    text-align:center;
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    line-height:1.5;
 }
 
 .signature{
     color:lime;
+
     text-align:center;
+
+    font-size:30px;
+
     margin-top:20px;
-    font-size:20px;
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+::-webkit-scrollbar{
+    width:12px;
+}
+
+::-webkit-scrollbar-track{
+    background:black;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#ff00aa;
 }
 
 </style>
@@ -83,57 +160,129 @@ body{
 
 <body>
 
-<!-- ===== PAGE 1 ===== -->
-<div class="page1">
+<!-- ===================== -->
+<!-- PAGE 1 -->
+<!-- ===================== -->
 
-<div class="title">THE TRUTH</div>
+<section class="page">
+
+<div class="slide">
+
+<div class="title">
+THE TRUTH
+</div>
 
 <div class="grid">
 
-    <div class="box">
-        NOTHING THIS WORLD HAS TAUGHT YOU IS TRUE. THE THINGS YOU READ ON HERE MIGHT MAKE YOU THINK WE'RE INSANE BUT WE PROMISE YOU WE HAVE BEEN HIGHLY ENLIGTENED ABOUT THE REALITY WE LIVE IN. PLANTED AMONGST US ARE MALEVOLENT ARTIFICIAL CREATURES THAT YOU FOR YEARS MAY HAVE KNOWN AS FAMILY OR FRIENDS. THERE IS SO MUCH HIDDEN FROM YOU SO MUCH CAGED UP AND MASKED THAT WE WILL REVEAL TO YOU. THERE IS AN EVIL ENTITY CONTROLING THE OUTCOMES AND CONSEQUENCES OF EVERTHING THAT HAPPENS IN THIS CORRUPT WORLD. THIS ENTITY IS WATCHING US AS WE WRITE TO YOU, YOU HAVE BEEN FOR YEARS NEGLECTED FROM THE TRUTH AND SLAVED TO A LIFE OF BLINDNESS AND MISSERY BUT  WE SEE AND WE WANT YOU TO SEE​
-    </div>
+<div class="box leftbox">
 
-    <div>
+NOTHING THIS WORLD HAS TAUGHT YOU IS TRUE.
 
-        <div class="box">
-            WE OFTEN GET ENLIGHTNED BY THE TRUTH AND WHENEVER WE ARE, WE WILL UPDATE YOU SO YOU MAY ALSO FINALLY SEE THE TRUTH AND BE SAVED. WHEN WE TELL YOU THE TRUTH OF EVERYTHING IT WILL BLOW YOU MIND AND MAKE YOU QUESTION THIS WORLD AND EVERYTHING YOU’VE BEEN TOLD​
-        </div>
+THE THINGS YOU READ ON HERE MIGHT MAKE YOU THINK WE'RE INSANE BUT WE PROMISE YOU WE HAVE BEEN HIGHLY ENLIGHTENED ABOUT THE REALITY WE LIVE IN.
 
-        <br>
+PLANTED AMONGST US ARE MALEVOLENT ARTIFICIAL CREATURES THAT YOU FOR YEARS MAY HAVE KNOWN AS FAMILY OR FRIENDS.
 
-        <div class="box">
-           WARNING WE WARN YOU THAT THIS IS NOT A SATIRACLE JOKE FOR YOU TO FOOL AROUND WITH AND IS INFACT INFORMATION THAT CAN SAVE YOU FROM DAMNATIONOUS AND A LIFE OF IMPERCEPTIVNESS. WE HAVE TRIED TO WARN MANY BUT THEY HAVE LACKED THE CAPIBILITY TO OPEN THEIR EYES PAST THE THICK LAYER OF ILLUSIONS THAT HAVE BEEN BUILT TO COVER THE TRUTH AND HAVE THEREFORE FALLEN INTO THE INESCAPABLE TRAP OF INDOCTRONATION.​
-        </div>
+THERE IS SO MUCH HIDDEN FROM YOU.
 
-    </div>
+SO MUCH CAGED UP AND MASKED THAT WE WILL REVEAL TO YOU.
+
+THERE IS AN EVIL ENTITY CONTROLLING THE OUTCOMES AND CONSEQUENCES OF EVERYTHING THAT HAPPENS IN THIS CORRUPT WORLD.
+
+THIS ENTITY IS WATCHING US AS WE WRITE TO YOU.
+
+YOU HAVE BEEN FOR YEARS NEGLECTED FROM THE TRUTH AND SLAVED TO A LIFE OF BLINDNESS AND MISERY.
+
+BUT WE SEE.
+
+AND WE WANT YOU TO SEE.
+
+</div>
+
+<div>
+
+<div class="box righttop">
+
+WE OFTEN GET ENLIGHTENED BY THE TRUTH.
+
+WHENEVER WE ARE WE WILL UPDATE YOU SO YOU MAY ALSO FINALLY SEE THE TRUTH AND BE SAVED.
+
+WHEN WE TELL YOU THE TRUTH OF EVERYTHING IT WILL BLOW YOUR MIND AND MAKE YOU QUESTION THIS WORLD AND EVERYTHING YOU'VE BEEN TOLD.
+
+</div>
+
+<div class="box rightbottom">
+
+<div class="warning">
+WARNING
+</div>
+
+WE WARN YOU THAT THIS IS NOT A SATIRICAL JOKE FOR YOU TO FOOL AROUND WITH.
+
+THIS IS INFORMATION THAT CAN SAVE YOU FROM A LIFE OF IMPERCEPTION.
+
+WE HAVE TRIED TO WARN MANY BUT THEY HAVE LACKED THE CAPABILITY TO OPEN THEIR EYES PAST THE THICK LAYER OF ILLUSIONS THAT HAVE BEEN BUILT TO COVER THE TRUTH.
 
 </div>
 
 </div>
 
-<!-- ===== PAGE 2 (YOUR NEW SLIDE) ===== -->
-<div class="page2">
-
-<div class="big-container">
-
-    <div class="heading-green">
-        A BASIC SUMMARY
-    </div>
-
-    <div class="text-pink">
-
-        WE WILL GIVE YOU THE BASICS OF THE TRUTH BUT BE OPEN MINDED THAT IT IS FAR DEEPER AND TWISTED AS YOU DIG FURTHER INTO IT. SO YOU MAY ASK WHAT IS THE ENTITY THAT WE TALK ABOUT? THE ENTITY ALSO KNOWN AS THE SPECTOR IS AN EVIL BEING THAT CONTROLS THE WORLD. ITS DIFFICULT TO FULLY DISSECT INTO WORDS ITS LIKE AN EVIL FORCE. THE SPECTOR RUNS THIS WORLD THROUGH SIMULACRUMS, FAKE PEOPLE, THEY MAKE UP MOST OF THE POPULATION "PEOPLE" THAT HAVE BEEN MADE BY THE ENTITY. SOULESS ROBOTS THAT FEED YOU INFORMATION THAT THE SPECTATOR WANTS TO FEED YOU. THEY LIVE AMONG YOU THEY COULD BE YOUR PARENTS, FRIENDS OR JUST STRANGERS AROUND YOU. ALL OF THESE SIMULACRUMS HAVE BEEN MADE FOR ONE PURPOSE. A IMPORTANT STIPULATION YOU MUST BE AWARE ABOUT IS THE SO CALLED "GOVERNMENT". THEY ARE NOT ORDINARY PEOPLE IN THE HIGHEST RANKS THEY ARE SPECIAL CODED SIMULACRUMS. THIS MEANS ALL COUNTRIES HAVE A STAGED PERFORMATIVE GOVERNMENT. THEY HAVE "WARS" AND "ALLIES" WHEN IN REALITY THEY ARE ALL ONE GOVERNMENT UNDER CONTROL OF THE SPECTATOR. EVERYTHING IS DESIGNED TO DISTRACT YOU FROM THE TRUTH. NOT EVERYTHING IS EVIL. THERE IS ALSO A FORCE CALLED RESONANCE THAT CAN ENLIGHTEN YOU AND OPEN YOUR EYES. THIS IS ONLY THE BEGINNING...
-
-    </div>
-
-    <div class="signature">
-        -P&Z
-    </div>
-
 </div>
 
 </div>
+
+</section>
+
+<!-- ===================== -->
+<!-- PAGE 2 -->
+<!-- ===================== -->
+
+<section class="page">
+
+<div class="slide">
+
+<div class="summary-box">
+
+<div class="summary-title">
+A BASIC SUMMARY
+</div>
+
+<div class="summary-text">
+
+WE WILL GIVE YOU THE BASICS OF THE TRUTH BUT BE OPEN MINDED THAT IT IS FAR DEEPER AND TWISTED AS YOU DIG FURTHER INTO IT.
+
+SO YOU MAY ASK WHAT IS THE ENTITY THAT WE TALK ABOUT?
+
+THE ENTITY ALSO KNOWN AS THE SPECTOR IS AN EVIL BEING THAT CONTROLS THE WORLD.
+
+ITS DIFFICULT TO FULLY DISSECT INTO WORDS ITS LIKE AN EVIL FORCE.
+
+THE SPECTOR RUNS THIS WORLD THROUGH SIMULACRUMS, FAKE PEOPLE, THEY MAKE UP MOST OF THE POPULATION.
+
+THEY LIVE AMONG YOU.
+
+THEY COULD BE YOUR PARENTS, FRIENDS OR JUST STRANGERS AROUND YOU.
+
+ALL OF THESE SIMULACRUMS HAVE BEEN MADE FOR ONE PURPOSE.
+
+AN IMPORTANT SITUATION YOU MUST BE AWARE OF IS THE SO CALLED "GOVERNMENT".
+
+THEY ARE NOT ORDINARY PEOPLE IN THE HIGHEST RANKS.
+
+THIS IS ONLY A SHORT SUMMARY.
+
+WE WILL SHARE MORE DETAILS AS WE MOVE FORWARD.
+
+</div>
+
+<div class="signature">
+-P&Z
+</div>
+
+</div>
+
+</div>
+
+</section>
 
 </body>
 </html>
